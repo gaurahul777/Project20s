@@ -1,0 +1,97 @@
+<main class="p-5">
+  <h1 class="text-xl bg-pink-400  text-white text-center font-bold font-serif border-gray-700 border-2 rounded-xl py-1">Hello World</h1>
+<div class="w-full h-10 bg-fuchsia-400 border-black border-[2px] rounded-xl my-2 p-1">
+  <p class="text-center font-mono font-extrabold text-lg">A div</p>
+</div>
+
+<!-- layout -->
+<div class=" fixed w-15 h-15 bg-red-500 top-0 text-center">iam fixed</div>
+<div class="flex bg-slate-200 p-3 justify-center items-center space-x-5">
+  <div class="w-16 h-16 bg-blue-400 rounded-full"></div>
+   <div class="w-16 h-16 bg-blue-400 rounded-full"></div>
+    <div class="w-16 h-16 bg-blue-400 rounded-full"></div>
+</div>
+<div class="grid grid-cols-2 gap-2 mt-5">
+  <div class="h-12 bg-purple-600">header</div>
+   <div class="h-12 bg-purple-600"></div>
+    <div class="h-12 bg-purple-600"></div>
+     <div class="h-12 bg-purple-600"></div>
+      <div class="h-12 bg-purple-600"></div>
+</div>
+
+<!-- media queries -->
+
+<div class="md:block hidden">
+  <p>i will appear for device resolution > 768px</p>
+</div>
+
+<div class="max-md:block hidden">
+    <p>i will appear for device resolution < 768px</p>
+
+</div>
+
+<div class="card">
+  <h3 class="text-base font-medium tracking-tight dark:text-white text-slate-900">this is a text element </h3>
+  <p class="mt-2 text-sm text-slate-500 dark:text-blue-100">this is even an a text box also</p>
+  <button 
+  id="toggleDark"
+  class="text-blue-900 bg-blue-100 mt-3 py-2 px-4 text-sm font-medium hover:bg-blue-900 hover:text-blue-100 "
+  onclick="document.body.classList.toggle('dark')"
+  >Toggle Dark Mode</button>
+
+</div>
+
+<button class="special-button">Click Me! </button>
+<p class="text-chestnuthainbhai">iam jack sparrow</p>
+</main>
+
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded",()=>{
+  const toggledark=document.getElementById('toggleDark');
+toggledark.addEventListener("click",function(){
+if(document.documentElement.classList.includes('dark')){
+toggledark.classList.remove('dark')
+}else{
+toggledark.classList.add('dark')}
+alert('click');
+});
+});
+  
+  </script>
+
+
+
+//css
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .card{
+    @apply m-10 rounded-lg bg-white px-6 py-8 shadow-xl ring-1 ring-slate-900/5 dark:bg-black
+  }
+  .special-button{
+    @apply bg-gradient-to-r from-purple-500 to-blue-500 
+hover:from-purple-600 hover:to-blue-600 focus:outline-none focus:ring focus:ring-purple-300
+active:bg-blue-700 px-6 py-3 rounded-lg text-white font-semibold shadow-md transition duration-300 ease-in-out
+transform hover:scale-105
+  }
+}
+
+
+//config
+
+
+/** @type {import('tailwindcss').Config} */
+module.exports= {
+darkMode:"class",
+  theme: {
+    extend: {
+      colors:{
+        chestnuthainbhai:'#973f29',
+      }
+    },
+  },
+  plugins: [],
+}
