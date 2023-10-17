@@ -64,6 +64,6 @@ export default class Example extends PureComponent {
           </Pie>
         </PieChart>
       </ResponsiveContainer>
-    );
+    )
   }
 }

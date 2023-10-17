@@ -40,7 +40,7 @@ function Dashboard() {
           </div>
         </div>
       </div>
-      ;
+      
       <div className="bg-white p-4 rounded-xl flex justify-between">
         <div className="w-1/2">
           <div className="flex gap-3 justify-start items-center">
