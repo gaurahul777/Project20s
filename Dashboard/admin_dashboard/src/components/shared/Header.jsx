@@ -7,7 +7,7 @@ function Header() {
     <div className=" bg-[#f5f6f8] h-16 p-5 flex justify-between px-8 items-center">
       <div className="font-semibold text-lg flex gap-x-2">
         <span>
-        Hello Hemant,
+        Hello Rahul,
         </span>
           <FcLikePlaceholder fontSize={25}/>
       </div>
