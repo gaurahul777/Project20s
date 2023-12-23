@@ -1,0 +1,9 @@
+ab hum post kerna chhate hain ek post me user ki details hoti hain aur title and descripion hota h ab hum cretepost route se user se title image and description le lengye aur usew store kerwane ke liye hum ek post.js model route me bnayengye
+
+req.body.___ >> se text ajyega
+req.file.___ >> se file ajyegyi
+
+/profile me user ko bhej rhe hain wahi per he post ko populate ker ke bhejo
+
+postModel.find().limit(25) limit krne ke liye
+isme ? har point per check ker rha h in this case agr kise user ne kuch bhi upload nhi kiya hota h to error aati h isliye yeh kiya ab error nhi ayegyi
